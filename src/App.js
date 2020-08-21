@@ -5,7 +5,7 @@ import ParkingSpace from "./components/parkingspace";
 import GridComponent from './components/gridcomponent';
 
 function App() {
-  return (
+  return ( 
     <div>
       <h1> You're gonna be rich kid </h1>
       <GridComponent />
