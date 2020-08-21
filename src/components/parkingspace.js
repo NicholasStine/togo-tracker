@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
 
 export default class ParkingSpace extends Component {
     constructor(props){
@@ -8,7 +12,13 @@ export default class ParkingSpace extends Component {
     
     render() {
         return(
-            <div>Sono Mio parking space-o</div>
+            <Card>
+                <CardBody>
+                    <CardTitle>Parking Space</CardTitle>    
+                    <Button>They Here</Button>
+                    <Button>They Gone</Button>
+                </CardBody>
+                </Card>
         )
     }
 }

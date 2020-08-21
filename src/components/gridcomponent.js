@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import GridLayout from 'react-grid-layout';
+import { Container, Row, Col } from 'reactstrap';
+
+
 import ParkingSpace from './parkingspace';
 
 export default class GridComponent extends Component {
@@ -8,17 +10,111 @@ export default class GridComponent extends Component {
     }
 
     render(){
-        const layout = [
-            {i: 'a', x: 0, y: 0, w: 1, h: 2, static: true},
-            {i: 'b', x: 5, y: 0, w: 3, h: 2, static: true},
-            {i: 'c', x: 10, y: 0, w: 1, h: 2, static: true}
-          ];
+        
           return (
-            <GridLayout className="layout" layout={layout} cols={12} rowHeight={30} width={1200}>
-                <ParkingSpace key="a"> </ParkingSpace>
-                <ParkingSpace key="b"> </ParkingSpace>
-                <ParkingSpace key="c"> </ParkingSpace>
-            </GridLayout>
+            <Container>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> 
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                </Row>
+                <Row><br></br></Row>
+                <Row>
+                    <Col></Col>
+                    <Col></Col>
+                    <Col>
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                    <Col>
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                    <Col>
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                </Row>
+                <Row>
+                    <Col>  
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                </Row>
+                <Row>
+                    <Col>  
+                        <ParkingSpace></ParkingSpace>
+                    </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                    <Col> </Col>
+                </Row>
+            </Container>
           )
     }
 }
