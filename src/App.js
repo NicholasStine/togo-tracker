@@ -7,7 +7,7 @@ import ParkingLot from './components/parkinglot';
 function App() {
   return ( 
     <div>
-      <h1> You're gonna be rich kid </h1>
+      <h1> Olive Garden Togo - Tracker </h1>
       <ParkingLot />
     </div>
   );

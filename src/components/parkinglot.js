@@ -8,10 +8,12 @@ import ParkingSpace from './parkingspace';
 
 // Layout Parameters for responsive layout changes at breakpoints
 const layout = layoutGenerator({
-    mobile: 0,
+    mobile_vertical: 0,
+    mobile_horizontal: 635,
     desktop: 800
   });
-const OnMobile = layout.is('mobile');
+const OnMobileVertical = layout.is('mobile_vertical');
+const OnMobileHorizontal = layout.is('mobile_horizontal');
 const OnDesktop = layout.is('desktop');
 
 // Component Class
@@ -24,51 +26,136 @@ export default class GridComponent extends Component {
         return (
 
 <div>
-<OnMobile>
-    <Container fluid>
+<OnMobileVertical>
+    <Container>
         <Row>
             <Col>
                 <ParkingSpace></ParkingSpace>
-            </Col>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
             <Col>
-                <ParkingSpace></ParkingSpace>
-            </Col>
-            <Col>
-                <ParkingSpace></ParkingSpace>
-            </Col>
+                <ParkingSpace></ParkingSpace> 
+            </Col>           
         </Row>
         <p style={{height: "1px"}}></p>
         <Row>
             <Col>
                 <ParkingSpace></ParkingSpace>
-            </Col>
-            <Col>
-                <ParkingSpace></ParkingSpace>
-            </Col>
-            <Col>
-                <ParkingSpace></ParkingSpace>
-            </Col>
+            </Col>           
         </Row>
         <p style={{height: "1px"}}></p>
         <Row>
             <Col>
                 <ParkingSpace></ParkingSpace>
-            </Col>
-            <Col>
-                <ParkingSpace></ParkingSpace>
-            </Col>
-            <Col>
-                <ParkingSpace></ParkingSpace>
-            </Col>
+            </Col>           
         </Row>
         <p style={{height: "1px"}}></p>
         <Row>
             <Col>
                 <ParkingSpace></ParkingSpace>
-            </Col>
+            </Col>           
         </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>           
+        </Row>
+        <p style={{height: "1px"}}></p>
     </Container>
-</OnMobile>
+</OnMobileVertical>
+
+<OnMobileHorizontal>
+<Container fluid>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+        </Row>
+        <p style={{height: "1px"}}></p>
+        <Row>
+            <Col>
+                <ParkingSpace></ParkingSpace>
+            </Col>
+        </Row>
+        <p style={{height: "1px"}}></p>
+    </Container>
+</OnMobileHorizontal>
+
 <OnDesktop>
 <Container fluid>
     <Row>
