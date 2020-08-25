@@ -1,0 +1,34 @@
+.card-container{
+    height: 62px;
+    width: 190px; 
+    padding-top: 0px;
+    background-color: azure;
+}
+
+.card-body{
+    padding-top: 0px;
+    padding-left: 5p;
+}
+
+.card-title{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 178px;
+}
+
+.name-here{
+    table-layout: fixed;
+    width: 178px;
+}
+
+.button-container{
+    padding-left: 10px;
+}
+
+.button-row{
+    width: 210px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+}
+

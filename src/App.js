@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import ParkingSpace from "./components/parkingspace";
-import ParkingLot from './components/parkinglot';
+import ParkingSpace from "./components/ParkingLot/parkingspace";
+import ParkingLot from './components/ParkingLot/parkinglot';
 
 function App() {
   return ( 
